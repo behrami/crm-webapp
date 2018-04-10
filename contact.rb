@@ -15,6 +15,10 @@ class Contact<ActiveRecord::Base
     return "#{first_name} #{last_name}"
   end
 
+  def email_address
+    return "#{email}"
+  end
+
 end
 
 Contact.auto_upgrade!
